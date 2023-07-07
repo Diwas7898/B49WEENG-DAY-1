@@ -1,0 +1,45 @@
+- Object in JavaScript  are composite value that can store property and methods. 
+Object are collections of properties, Properties can be of any data type, including Number, boolean, Strings, arrays, or even there objects 
+ 
+- Properties are a key-value pari (Property = key + value )
+
+- All keys are converted to string 
+
+ Ex: 
+
+   Const diwas = {
+
+    userName: 'Diwas',
+    Age: 29,
+    hasLicence: true, 
+    Hobbies: ['reading', 'coding']
+   }
+----------------------------------------
+
+   Key      -  Value Paris 
+   userName:  'Diwas'
+   Age:        29
+   hasLicence: true
+   hobbies:    ['reading, 'coding']
+
+- Rather than accessing data using an index, we use custom keys. 
+
+
+--  Internal Representation of Objects ---
+
+Const diwas = {
+
+    userName: 'Diwas',
+    Age: 29,
+    hasLicence: true, 
+    Hobbies: ['reading', 'coding']
+   }
+
+- Javascript engines use many ways and and the most common way is know as a hash table or hash map. A has table  is a data structure that maps keys to values, allowing for fast reterieval and insertion of data. 
+- When an object is created, the JS engine allocates memory to store the object's properties and methods. 
+- Each Property is stored as a key-value pair within the object. 
+- The keys are usually strings( some cases, symbols), while the value can be of any data type. 
+- In above example, the 'diwas' object has properties like 'userName', 'age', 'hasLicence', and 'hobbies'.
+- To access a property of an object, JS engines using a process called property lookup.
+- So when to access a property, dot notation or bracket notation (e.g. console.log(diwas.userName)) (e.g console.log(diwas['userName'])), the engine internally hashes the property name and use it as an index to locate the corresponding value in the objects memory. 
+- Hence allows to retrieve of properties

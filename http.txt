@@ -1,0 +1,42 @@
+Hypertext Transfer Protocol - Internet 
+
+Difference Between HTTP/1.1 Vs HTTP/2
+
+HTTP/1.1  
+
+-  First standardized version of HTTP 1.1  was available  in 1997 
+-  It works on the textual format 
+-  Ihere is head of line blocking that blocks all the request behind it until it doesn't get all the resources. 
+-  It uses requests rescue Inlining for use getting multiple pages 
+-  It compresses data by itself 
+
+HTTP/2
+-  It was developed over the SPDY protocol. 
+-  It works on the binary protocol 
+-  It allows multiplexing so one TCP connection is required for multiple requests.
+-  It uses PUSH frame by sever that collects all multipage pages 
+-  It uses HPACK for date compression 
+
+------------------------------------------------------------------
+
+IP address : Internet Protocol Address is used to identify network in internet( WWW or Golbal Public Network ). It serves as a unique identifier for a device within a network, allowing it to send and receive data over the internet. 
+
+Port Number: It is a unique ID of protocols in computers network.  It is a 16 bits value, range 0 - 65535 
+This range in divided into three categories:
+1. Well - Known Ports: ranging from 0 to 1023. They are assigned to specific services or protocols by the Internet Assigned Numbers Authority(IANA). For exp. Port 80 is commonly used for HTTP, port 443 for HTTPS(secure)
+2. Registered Ports: ranging from 1024 to 49151/ They can be registered with the IANA or organization or software developers for specific applications and services. 
+3. Dynamic or Private Ports: ranging from 49152 to 65535,  They are available for dynamic assignment by client application or temporary use by the operating system. 
+
+MAC: Media Access Control Address -> local addresses to identify/access media on a local network
+
+HTTP Methods 
+HyperText Transfer Protocol methods allow client(browser) to communicate with servers and perform various operations. 
+Here are the most commonly used HTTP Methods:
+
+1. GET
+2. POST
+3. PUT
+4. PATCH
+5. DELETE 
+6. HEAD
+7. OPTIONS
